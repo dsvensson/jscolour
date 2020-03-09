@@ -1,4 +1,3 @@
-================================================================================================
 This is version 1.0 of JsColour 
 --------------------------------------------------------
 JsColour is a modification of MHColour (based on source for version 0.5). It is a light 
@@ -19,11 +18,11 @@ for in-build textures into file default.def .
 
 New command line switches
 -------------------------
--external FILENAME
-Turns on usage of external light colour definition file. External definition file name (FILENAME) 
+`-external FILENAME`
+ Turns on usage of external light colour definition file. External definition file name (`FILENAME`) 
 must be specified.  
 
--nodefault
+`-nodefault` 
 Suppres usage of built-in light color definition for default texture sets. Usefull if you want
 to use light coloring for only limited subset of textures. Those that should be used then should 
 be defined in external definition file.   
@@ -32,24 +31,24 @@ Format of external light colour definition file
 -----------------------------------------------
 It is prety simple. Each entry is on a new line. Entry starts with texture name (just a string 
 without qoutes) and is folowed by colour triplet eg. red, green and blue component (iteger number 
-in range of ( 0 - 255 ). They are separated by space. Entry ends with newline char (cr,lf).
+in range of ( 0 - 255 ). They are separated by space. Entry ends with newline char (`cr`,`lf`).
 
-texture_name red_val green_val blue_val	<newline>	
-[1-64 chars] [0-255] [0-255]   [0-255] 
+    texture_name red_val green_val blue_val	<newline>	
+    [1-64 chars] [0-255] [0-255]   [0-255] 
 
 Example
 -------
-*lava 	  255  10  10
-*water 	   64 128 128
-*slime 	   10 255  10
-*teleport  30  30  30
+    *lava     255  10  10
+    *water 	   64 128 128
+    *slime 	   10 255  10
+    *teleport  30  30  30
 
 File default.def contains in-built values in external form.
 --------------------------------------------------------
 
 Legal : JsColour modifies MHColour which falls under GPL so it goes under GPL too naturaly. Read
-gnu.txt for more informations.
-================================================================================================
+LICENSE.md for more informations.
+
 This is version 0.5 of MHColour - use at your own peril!
 --------------------------------------------------------
 
@@ -79,13 +78,13 @@ engine to look into this in detail.
 
 New command line switches
 -------------------------
--force
+`-force`
 While running, MHColour will display loads of interesting information on how effective the
 colouring process is gonna be.  At any time it decides that the process will be ineffective
 you will get an option to abandon ship.  Use -force to override this and always continue,
 but don't say I didn't warn you if you don't like what you see.
 
--lit
+`-lit`
 Generate a LIT file.  Bear in mind the warning above.  The loss of accuracy will only
 occur in one or two places in one or two maps, so it's not really that big an issue.
 
