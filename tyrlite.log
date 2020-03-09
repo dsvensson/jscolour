@@ -1,0 +1,4 @@
+----- TyrLite v0.8beta -----
+************ ERROR ************
+usage: light [-threads num] [-light num] [-extra]
+             [-nocount] [-compress] [-colored] [-nominlimit] bspfile
