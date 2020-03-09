@@ -7,7 +7,6 @@
 //   really only suited to base maps
 // - added rogue, hipnotic and zerstorer textures
 
-#include <conio.h>
 #include "tyrlite.h"
 
 void FindTexlightColour (int *surf_r, int *surf_g, int *surf_b, char *texname)
@@ -474,7 +473,7 @@ void DecisionTime (char *msg)
 
 	while (1)
 	{
-		c = getch ();
+		c = getchar ();
 
 		if (c == 'y' || c == 'Y' || c == 'n' || c == 'N') break;
 	}

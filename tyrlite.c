@@ -24,6 +24,11 @@
 
 #include "tyrlite.h"
 
+#include <limits.h>
+
+#define __min(a,b) (((a) < (b)) ? (a) : (b))
+#define __max(a,b) (((a) > (b)) ? (a) : (b))
+
 extern int numbounces;
 
 int numhits[MAX_MAP_ENTITIES];
@@ -61,7 +66,7 @@ extern int num_lights;
 //++ [js] new feature
 qboolean external;
 qboolean nodefault;
-char extfilename[MAX_PATH]; 
+char extfilename[PATH_MAX];
 tex_col_list tc_list;
 
 // get number of lines in text 
