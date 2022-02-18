@@ -96,3 +96,18 @@ MHColour, even if *not explicitly stated* in the program files.  Any evil, bad o
 people out there who like making money out of stuff that others have given away for free
 can go fuck off right now.
 
+
+Build
+-----
+
+Linux:
+
+    meson build --prefix=/usr
+	cd build
+	ninja
+
+Cross-Compile to Windows:
+
+    CC=/usr/bin/x86_64-w64-mingw32-gcc-win32 meson build --cross-file cross_file.txt
+	cd build
+	ninja
