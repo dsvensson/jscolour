@@ -7,7 +7,7 @@ project(
 cc = meson.get_compiler('c')
 
 executable(
-  'main',
+  'jscolour',
   sources: [
     'bspfile.c',
     'cmdlib.c',
